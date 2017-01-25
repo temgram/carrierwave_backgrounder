@@ -1,5 +1,5 @@
 # encoding: utf-8
-require 'backgrounder/workers'
+require 'carrier_wave/workers'
 
 module CarrierWave
   module Backgrounder
