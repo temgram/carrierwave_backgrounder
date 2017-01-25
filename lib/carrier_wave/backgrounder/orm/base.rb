@@ -105,7 +105,9 @@ module CarrierWave
             end
 
             def enqueue_#{column}_background_job?
-              !remove_#{column}? && !process_#{column}_upload && #{column}_updated?
+              remove = remove_#{column}
+              remove? = remove.present? and remove !~ /\A0|false$\z/
+              !remove? && !process_#{column}_upload && #{column}_updated?
             end
 
             def enqueue_#{column}_background_job
