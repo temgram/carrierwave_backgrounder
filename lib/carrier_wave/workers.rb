@@ -1,6 +1,0 @@
-require 'carrier_wave/workers/base'
-require 'carrier_wave/workers/class_methods'
-require 'carrier_wave/workers/process_asset_mixin'
-require 'carrier_wave/workers/store_asset_mixin'
-require 'carrier_wave/workers/process_asset'
-require 'carrier_wave/workers/store_asset'
